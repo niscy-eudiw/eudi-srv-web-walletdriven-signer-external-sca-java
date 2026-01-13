@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0]
+
+_X Jan 2026_
+
+### Fixed:
+- Fixed an issue where CAdES signed documents were incorrectly labeled with the *application/pdf* MIME type instead of a CAdES-appropriate MIME type.
+
 ## [0.3.0]
 
 _28 May 2025_

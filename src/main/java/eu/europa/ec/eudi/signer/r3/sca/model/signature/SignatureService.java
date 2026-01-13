@@ -183,18 +183,22 @@ public class SignatureService {
         try {
             if (document.getContainer().equals("ASiC-E")) {
                 if (document.getSignature_format().equals("C") || document.getSignature_format().equals("X")) {
-                    docSigned.setMimeType(MimeType.fromMimeTypeString("application/vnd.etsi.asic-e+zip"));
+                    docSigned.setMimeType(MimeTypeEnum.ASICE);
                 }
             } else if (document.getContainer().equals("ASiC-S")) {
                 if (document.getSignature_format().equals("C") || document.getSignature_format().equals("X")) {
-                    docSigned.setMimeType(MimeType.fromMimeTypeString("application/vnd.etsi.asic-s+zip"));
+                    docSigned.setMimeType(MimeTypeEnum.ASICS);
                 }
             } else if (document.getSignature_format().equals("J")) {
-                docSigned.setMimeType(MimeType.fromMimeTypeString("application/jose"));
+                docSigned.setMimeType(MimeTypeEnum.JOSE);
+            } else if (document.getSignature_format().equals("P")) {
+                docSigned.setMimeType(MimeTypeEnum.PDF);
             } else if (document.getSignature_format().equals("X")) {
-                docSigned.setMimeType(MimeType.fromMimeTypeString("text/xml"));
-            } else {
-                docSigned.setMimeType(MimeType.fromMimeTypeString("application/pdf"));
+                docSigned.setMimeType(MimeTypeEnum.XML);
+            } else if(document.getSignature_format().equals("C") && document.getSigned_envelope_property().equals("DETACHED")){
+                docSigned.setMimeType(MimeTypeEnum.PKCS7);
+            } else if(document.getSignature_format().equals("C") && document.getSigned_envelope_property().equals("ENVELOPING")){
+                docSigned.setMimeType(MimeTypeEnum.PKCS7);
             }
         } catch (Exception e) {
             fileLogger.error("invalid request: {}", e.getMessage());
