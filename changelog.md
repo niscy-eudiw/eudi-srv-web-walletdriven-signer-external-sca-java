@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0]
+
+_X Jan 2026_
+
+### Added:
+- Prometheus metrics endpoint for service monitoring.
+
 ## [0.3.0]
 
 _28 May 2025_
