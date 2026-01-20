@@ -16,14 +16,21 @@
 
 package eu.europa.ec.eudi.signer.r3.sca.config;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 
 @ConfigurationProperties(prefix = "timestamp-authority")
+@Validated
 public class TimestampAuthorityConfig {
+	@NotBlank
 	private String certificatePath;
+	@NotBlank
 	private String serverUrl;
+	@NotEmpty
 	private List<String> supportedDigestAlgorithm;
 
 	public String getCertificatePath() {

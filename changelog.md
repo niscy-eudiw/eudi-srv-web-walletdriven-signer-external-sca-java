@@ -5,7 +5,15 @@
 _X Jan 2026_
 
 ### Added:
-- Prometheus metrics endpoint for service monitoring.
+- Prometheus metrics endpoint for enhanced service monitoring.
+- Unit tests to verify that SCA endpoints correctly validate incoming requests.
+
+### Changed:
+- Enhanced Swagger documentation for better API clarity.
+- Improve exceptions to improve traceability. 
+- Upgraded logging for more detailed diagnostic information. 
+- Update Maven dependencies versions.
+- Updated Docker Java and Maven images version.
 
 ## [0.3.0]
 
