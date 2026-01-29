@@ -195,9 +195,7 @@ public class SignatureService {
                 docSigned.setMimeType(MimeTypeEnum.PDF);
             } else if (document.getSignature_format().equals("X")) {
                 docSigned.setMimeType(MimeTypeEnum.XML);
-            } else if(document.getSignature_format().equals("C") && document.getSigned_envelope_property().equals("DETACHED")){
-                docSigned.setMimeType(MimeTypeEnum.PKCS7);
-            } else if(document.getSignature_format().equals("C") && document.getSigned_envelope_property().equals("ENVELOPING")){
+            } else if(document.getSignature_format().equals("C") ){
                 docSigned.setMimeType(MimeTypeEnum.PKCS7);
             }
         } catch (Exception e) {
