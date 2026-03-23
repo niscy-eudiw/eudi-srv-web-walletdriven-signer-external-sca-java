@@ -119,6 +119,12 @@ _2026-01-29 10:42:00 CET_
 > -   **POM Project URL**: [https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/Digital+Signature+Service+-++DSS](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/Digital+Signature+Service+-++DSS)
 > -   **POM License**: LGPL 2.1 - [https://www.gnu.org/licenses/lgpl-2.1.html](https://www.gnu.org/licenses/lgpl-2.1.html)
 
+**23** **Group:** `eu.europa.ec.joinup.sd-dss` **Name:** `dss-cms-object` **Version:** `6.3`
+
+> -   **POM Project URL**: [https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/Digital+Signature+Service+-++DSS](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/Digital+Signature+Service+-++DSS)
+> -   **POM License**: LGPL 2.1 - [https://www.gnu.org/licenses/lgpl-2.1.html](https://www.gnu.org/licenses/lgpl-2.1.html)
+
+
 ## Base Project
 
 **23** **Group:** `com.eidtrust` **Name:** `signer` **Version:** `0.1.0`
