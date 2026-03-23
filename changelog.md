@@ -2,14 +2,17 @@
 
 ## [0.4.0]
 
-_X Jan 2026_
+_X Mar 2026_
 
 ### Fixed:
 - Fixed an issue where CAdES signed documents were incorrectly labeled with the *application/pdf* MIME type instead of a CAdES-appropriate MIME type.
 
+### Changed:
+- Removed URL-encoding after document digest generation.
+
 ## [0.3.0]
 
-_28 May 2025_
+_1 Jul 2025_
 
 ### Added:
 - Visible representation of the PDF signature.
