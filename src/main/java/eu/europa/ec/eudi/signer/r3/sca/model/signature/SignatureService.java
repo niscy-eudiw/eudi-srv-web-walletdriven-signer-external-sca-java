@@ -74,8 +74,7 @@ public class SignatureService {
             logger.info("Successfully created digest of data to be signed of a document.");
 
             String dataToBeSignedStringEncoded = Base64.getEncoder().encodeToString(dataToBeSigned);
-            String dataToBeSignedURLEncoded = URLEncoder.encode(dataToBeSignedStringEncoded, StandardCharsets.UTF_8);
-            hashes.add(dataToBeSignedURLEncoded);
+            hashes.add(dataToBeSignedStringEncoded);
         }
 
         logger.info("Successfully created 'DataToBeSigned' for {} documents.", documents.size());
@@ -154,7 +153,6 @@ public class SignatureService {
         }
 
         InMemoryDocument signedDocument = new InMemoryDocument(DSSUtils.toByteArray(docSigned), docSigned.getName(), docSigned.getMimeType());
-
         return Base64.getEncoder().encodeToString(signedDocument.getBytes());
     }
 }

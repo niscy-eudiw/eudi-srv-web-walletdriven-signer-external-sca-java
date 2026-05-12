@@ -2,22 +2,23 @@
 
 ## [0.4.0]
 
-_X Jan 2026_
+_23 Mar 2026_
 
 ### Added:
 - Prometheus metrics endpoint for enhanced service monitoring.
 - Unit tests to verify that SCA endpoints correctly validate incoming requests.
 
 ### Changed:
+- Removed URL-encoding after document digest generation.
 - Enhanced Swagger documentation for better API clarity.
-- Improve exceptions to improve traceability. 
-- Upgraded logging for more detailed diagnostic information. 
+- Improve exceptions to improve traceability.
+- Upgraded logging for more detailed diagnostic information.
 - Update Maven dependencies versions.
 - Updated Docker Java and Maven images version.
 
 ## [0.3.0]
 
-_28 May 2025_
+_1 Jul 2025_
 
 ### Added:
 - Visible representation of the PDF signature.
