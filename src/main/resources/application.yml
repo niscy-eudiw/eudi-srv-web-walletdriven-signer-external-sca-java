@@ -28,12 +28,6 @@ logging:
     org.hibernate: ERROR
     org.springframework.web: INFO
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: prometheus
-
 timestamp-authority:
   certificate-path: ${TIMESTAMP_AUTHORITY_CERTIFICATE_FILEPATH} # Filepath to the Timestamp Authority certificate
   server-url: ${TIMESTAMP_AUTHORITY_URL} # Timestamp Authority URL

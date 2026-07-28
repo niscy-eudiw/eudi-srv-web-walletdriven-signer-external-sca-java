@@ -5,7 +5,6 @@
 _23 Mar 2026_
 
 ### Added:
-- Prometheus metrics endpoint for enhanced service monitoring.
 - Unit tests to verify that SCA endpoints correctly validate incoming requests.
 
 ### Changed:
