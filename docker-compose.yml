@@ -9,4 +9,5 @@ services:
     env_file:
       - .env
     volumes:
+      - ./logs:/opt/app/logs
       - {host_path_to_certificate}:{container_path_to_certificate}
