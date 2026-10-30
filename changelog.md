@@ -1,5 +1,14 @@
 # Changelog
 
+
+## [0.5.1]
+
+_30 Oct 2026_
+
+### Changed:
+- Mounted the `logs` directory as a volume in the `docker-compose.yml` services, so log files persist on the host.
+
+
 ## [0.5.0]
 
 _06 Oct 2026_
